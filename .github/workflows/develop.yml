@@ -56,4 +56,4 @@ jobs:
 
     - name: Build with Maven
       # When parent-2:1.7 is active, -P ensureSnapshots will do a sanity check of the version number
-      run: $MVNCMD -P ensureSnapshots,test -B verify
+      run: $MVNCMD -P ensureSnapshots,test -B verify site site:stage
